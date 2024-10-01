@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="io\Reader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\TableFile.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\Writer.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="msgraph_io.h" />
+    <ClInclude Include="msgraph_decl.h" />
+    <ClInclude Include="msgraph.h" />
+    <ClInclude Include="sampler.h" />
+    <ClInclude Include="meta.h" />
+    <ClInclude Include="bfs.h" />
+    <ClInclude Include="bfs_counter.h" />
+    <ClInclude Include="multiset.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="io">
+      <UniqueIdentifier>{77b15c55-359a-47c0-aab3-9c47115ce180}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sampler.cpp" />
+  </ItemGroup>
+</Project>

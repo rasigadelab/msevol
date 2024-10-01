@@ -1,0 +1,11 @@
+Package: Rmsevol
+Type: Multi-scale ecosystem simulation
+Title: Provides R interface to the C++ ecosystem imulator msevol
+Version: 0.1.0
+Author: Natacha Lenuzza & Jean-Philippe rasigade
+Maintainer: Natacha Lenuzza <ext-natacha.lenuzza@chu-lyon.fr>
+Description: TODO
+License: AGLP3.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
