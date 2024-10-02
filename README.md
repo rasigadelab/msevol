@@ -3,7 +3,9 @@ Multi-Scale EVOLution of antibiotic resistance
 
 Developed at the Centre International de Recherche en Infectiologie (CIRI), University of Lyon, Hospices Civils de Lyon.
 
-Concepts and original implementation, 2017-2024, Jean-Philippe Rasigade, jean-philippe.rasigade@chu-lyon.fr. Msevol development supported by the Agence Nationale de la Recherche under grant ANR-20-CE35-0012 and by the University of Lyon under grant LabEx EcoFect.
+Concepts and original implementation, 2017-2024, Jean-Philippe Rasigade, jean-philippe.rasigade@chu-lyon.fr. 
+
+Msevol development supported by the Agence Nationale de la Recherche under grant ANR-20-CE35-0012 and by the University of Lyon under grant LabEx EcoFect.
 
 
 ## Quickstart
