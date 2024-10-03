@@ -89,6 +89,7 @@ count_in <- function(l, right, mgraph) {
 
 
 #'@title mse1.plot_graph
+#'@import data.table
 #'@export
 mse1.plot_graph<- function(mseprm,
                            vertices_type = c("Patch", "Cell", "Chromosome",

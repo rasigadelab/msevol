@@ -156,7 +156,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "..\x64\Release\msevolcli.exe" "..\msevolr\bin"</Command>
+      <Command>copy /y "..\x64\Release\msevolcli.exe" "..\Rmsevol\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
