@@ -98,7 +98,7 @@ prm <- prm %>%
 
 # 4.1. Plasmid range
 
-prm <- prm %>% plasmidRange(0,0)
+prm <- prm %>% plasmidRange(source= 0, target = 0)
 
 # 4.2. Patch-to-Patch Diffusion edges
 prm <- prm %>% diffusion(0,1, diffusion = 1e-4, symmetric = TRUE)
@@ -238,7 +238,7 @@ plot(p2)
 
 
 if(run_for_tutorial){
-  tiff(paste(tutorial_path, "/cell_dynamics.tiff",sep = ""),
+  png(paste(tutorial_path, "/cell_dynamics.png",sep = ""),
        res = 300, unit = "cm", width = 25, height = 20)
   print(
     ggpubr::ggarrange(
@@ -402,9 +402,9 @@ plot(p1_full)
 
 
 if(run_for_tutorial){
-  tiff(paste(tutorial_path, "/cell_dynamics_with_restart.tiff",sep = ""),
+  png(paste(tutorial_path, "/cell_dynamics_with_restart.png",sep = ""),
        res = 300, unit = "cm", width = 25, height = 20)
-  plot(p1_full)
+  plot(p1_full + ggtitle("Fluctuating pressures"))
   dev.off()
 }
 
@@ -507,9 +507,37 @@ p1_repet <- ggplot(data = n_cells_per_patches,
 
 plot(p1_repet)
 if(run_for_tutorial){
-  tiff(paste(tutorial_path,"/cell_dynamics_with_repetition.tiff",sep = ""),
+  png(paste(tutorial_path,"/cell_dynamics_with_repetition.png",sep = ""),
        res = 300, unit = "cm", width = 15, height = 20)
-  plot(p1_repet)
+  plot(p1_repet + ggtitle("Repeted runs"))
   dev.off()
 }
+
+
+
+
+##----------------------------------------------------------------------
+## Final plot
+##
+
+
+if(run_for_tutorial){
+   png(paste(tutorial_path, "/toy_example.png",sep = ""),
+       res = 300, unit = "cm", width = 27, height = 30)
+   print(
+     ggpubr::ggarrange(
+       ggpubr::ggarrange(p2+ggtitle("Total Cell dynamics")+theme(legend.position = "none"),
+                         p1+ggtitle("Intra-patch Cell Dynamics")+theme(legend.position = "none"),
+       nrow = 1, ncol = 2, widths = c(9, 17)),
+     ggpubr::ggarrange(p1_repet + ggtitle("Repeted runs") + theme(legend.position = "none"),
+                       p1_full + ggtitle("Fluctuating pressures")+theme(legend.position = "none"),
+     nrow = 1, ncol = 2, widths = c(9, 17)),
+     nrow = 2, ncol = 1, heights = c(10, 20)
+     )
+   )
+
+   dev.off()
+ }
+
+
 

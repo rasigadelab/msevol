@@ -270,7 +270,7 @@ $m_(j',k)   \leftarrow   m_(j',k)+ n_j$.
 
 ![Figure 8 : Intra-patch plasmid conjugation (mass-action model)](./documentation/tutorial_figures/mse1_plasmid_transfer.png)
 
-**[Event 3 - Plasmid segregation]** A within-cell plasmid loss event (= plasmid 
+**[Event 4 - Plasmid segregation]** A within-cell plasmid loss event (= plasmid 
 random segregation) occurs with the probability $P^{loss}_p$  depending only 
 of the plasmid $p$.  To date, a cell can lose at most one plasmid per event, 
 and the loss event is applied once per plasmid $p$ per unique cell $j$ containing 
