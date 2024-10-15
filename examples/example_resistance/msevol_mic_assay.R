@@ -185,7 +185,7 @@ plot(pl<- ggplot(data = d[step == max(step), ],
 
 )
 
-tiff(paste(dirname(getwd()),"/examples/example_resistance/MIS_example.tif", sep = ""),
+png(paste(dirname(getwd()),"/examples/example_resistance/MIS_example.png", sep = ""),
            res = 300, units = "cm", height = 15, width = 24)
 
 plot(pl)

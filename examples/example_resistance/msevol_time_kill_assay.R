@@ -433,7 +433,7 @@ plotE <- ggplot(data = cells_dynamics_E,
 ################################################################################
 
 
-tiff(paste(r_res_path, "/time_killed_experiment_sensitive.tif",sep = ""),
+png(paste(r_res_path, "/time_killed_experiment_sensitive.png",sep = ""),
      units = "cm", res = 300,
      width = 24,
      height = 10)
@@ -445,7 +445,7 @@ dev.off()
 
 
 
-tiff(paste(r_res_path, "/time_killed_experiment_resistant.tif",sep = ""),
+png(paste(r_res_path, "/time_killed_experiment_resistant.png",sep = ""),
      units = "cm", res = 300,
      width = 36,
      height = 10)

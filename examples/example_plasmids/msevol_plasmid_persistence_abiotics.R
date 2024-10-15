@@ -151,8 +151,8 @@ d_cells <- rbindlist(lapply(results,
 d_cells[, transfer_rate := transfer_rate[repetition]]
 
 
-tiff(paste(dirname(getwd()),
-           "/examples/example_plasmids/mse1_abiotic_critical_transfer_0.9.tiff",
+png(paste(dirname(getwd()),
+           "/examples/example_plasmids/mse1_abiotic_critical_transfer_0.9.png",
            sep = ""),
      res = 300, units = "cm", width = 25, height = 15)
 print(
@@ -254,8 +254,8 @@ d_cells[, transfer_rate := transfer_rate[repetition]]
 
 
 
-tiff(paste(dirname(getwd()),
-           "/examples/example_plasmids/mse1_abiotic_critical_transfer_0.8.tiff",
+png(paste(dirname(getwd()),
+           "/examples/example_plasmids/mse1_abiotic_critical_transfer_0.8.png",
            sep = ""),
      res = 300, units = "cm", width = 25, height = 15)
 print(
@@ -358,8 +358,8 @@ d_cells[, transfer_rate := transfer_rate[repetition]]
 
 
 
-tiff(paste(dirname(getwd()),
-           "/examples/example_plasmids/mse1_abiotic_critical_transfer_0.7.tiff",
+png(paste(dirname(getwd()),
+           "/examples/example_plasmids/mse1_abiotic_critical_transfer_0.7.png",
            sep = ""),
      res = 300, units = "cm", width = 25, height = 15)
 print(

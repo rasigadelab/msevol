@@ -72,7 +72,7 @@ prm <- emptymodel() %>%
   assign("Chromosome", 0, "Cell", 0) %>%
   assign("Cell", 0, "Patch", 0, popsize)
 
-mse1.plot_graph(prm, layout = "hr")
+mse1.plot_graph(prm, layout = "fr")
 
 
 
@@ -406,8 +406,8 @@ prm <- emptymodel() %>%
   assign("Gene", 0, "Chromosome", 0) %>%
   assign("Chromosome", 0, "Cell", 0) %>%
   assign("Chromosome", 1, "Cell", 1) %>%
-  assign("Cell", 0, "Patch", 0, floor(popsize))%>%
-  assign("Cell", 1, "Patch", 0, floor(popsize))
+  assign("Cell", 0, "Patch", 0, floor(popsize/2))%>%
+  assign("Cell", 1, "Patch", 0, floor(popsize/2))
 
 mse1.plot_graph(prm)
 mse1.diagnose_model(prm)
@@ -1168,7 +1168,7 @@ if(save_r_res){
 ## Caracterization of cells generating during the simulations
 cells <- mse1.describe_cells(res)
 print(cells)
-
+DT::datatable(cells)
 
 
 
