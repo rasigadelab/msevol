@@ -338,7 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-/data
 /include/rapidjson
 /tmp.csv
 /tmp.json
@@ -349,7 +348,6 @@ healthchecksdb
 /msevolcli/data_out
 /mselib$$WIP
 /multisetexe/data_out
-/vendor/rmath
 /msevolcli/refgraph
 /msevolcli/test_in
 /msevolcli/test_out
